@@ -1,0 +1,627 @@
+*,
+::before,
+::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+label{
+  font-size: 20px;
+}
+
+html,
+body{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.entryMain{
+    height: 100vh;
+    width: 100vw;
+}
+
+.teamIntro{
+    height: 100vh;
+    width: 50vw;
+    float: left;
+    margin: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-items: center;
+}
+
+#sign{
+    height: 60vh;
+    width: 50vw;
+    float: right;
+    margin: 0;
+    align-items: center;
+    justify-items: center;
+    padding-top: 15%;
+}
+
+.teamIntro .teamLogo{
+    height: auto;
+    width: 70%;
+}
+
+.teamLogo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+#sign .authbtns{
+    width: 250px;
+    height: auto;
+}
+
+.authbtns button{
+    background-color: #191b1a; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    width: 100%;
+}
+
+button:hover{
+
+    background-color: rgb(67, 67, 67);
+
+}
+
+
+
+#signup{
+    height: 100vh;
+    width: 50vw;
+    float: right;
+    margin: 0;
+    display: grid;
+    place-content: center;
+}
+
+#signin{
+    height: 100vh;
+    width: 50vw;
+    float: right;
+    margin: 0;
+    display: grid;
+    place-content: center;
+}
+
+.container{
+  background-color: #FFF;
+  padding: 32px 48px;
+  margin-bottom: 5%;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+.container > h1{
+  margin-bottom: 20px;
+}
+
+.container > form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container div{
+  display: flex;
+  flex-direction: column;
+}
+
+.container input{
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.container input::placeholder{
+  font-size: 12px;
+  font-style: italic;
+}
+
+button{
+  background-color: rgb(0, 0, 0);
+  border: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+/* Navbar css */
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #b8b8b8; /* Solid background for better visibility */
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* General Navbar styles */
+.navbar {
+  width: 100%; /* Cover full width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(221, 212, 212, 0.6);
+  box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+  position: fixed; /* Make the navbar sticky at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+/* Logo styles */
+.navbar-logo {
+  float: left;
+  text-decoration: none;
+}
+
+.navbar-logo a{
+  text-decoration: none;
+}
+
+.navbar-logo h2 {
+  text-decoration: none;/* Adjust size as needed */
+
+  
+}
+
+/* Navbar links container */
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  gap: 3rem; /* Space between links */
+  margin: 0; /* Reset default margins */
+  padding: 0; /* Reset default padding */
+  float: right; /* Float links to the right */
+}
+
+.navbar-links li{
+  text-decoration: none;
+}
+
+.navbar-links button{
+  background-color: rgba(221, 212, 212, 0.6);
+  color: black;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 15px;
+  border: 1px black solid;
+}
+
+.navbar-links button:hover{
+  background-color: rgb(177, 177, 177);
+  border: none;
+}
+
+/* Link styles */
+.navbar-links a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+   /* Add padding for border hover effect */
+}
+
+/* Hover effect: Border bottom */
+
+
+/* Optional media query for responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 1rem;
+    float: none; /* Remove floating on small screens */
+  }
+
+  .navbar-logo .logo {
+    width: 40px;
+  }
+}
+
+
+/* Global Variables */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #f9f9f9;
+  --text-color: #333;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+  --border-radius: 20px;
+  --card-padding: 1rem;
+  --gap-size: 1.5rem;
+}
+
+/* Tools Page */
+
+.parent-container {
+
+  display: block; /* Ensure this */
+  visibility: visible;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 20vh;
+}
+
+/* Add Tool Box */
+.add-tool-box {
+  width: 100vw;
+  height: auto; 
+  overflow: visible;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px var(--box-shadow-color);
+  text-align: start;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.tools-page {
+  display: block;
+  width: 100vw; 
+  height: auto;
+  overflow: visible;
+  grid-template-columns: 1fr;
+  gap: var(--gap-size);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px var(--box-shadow-color);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.tools-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--gap-size);
+}
+
+.tool-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: var(--card-padding);
+  background-color: var(--secondary-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tool-card h2 {
+  margin: 0 0 0.5rem;
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.tool-card a:hover {
+  text-decoration: underline;
+}
+
+/* Add Tool Page */
+.add-tool-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px var(--box-shadow-color);
+  padding: 2rem;
+}
+
+.add-tool-page form {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.add-tool-page form label {
+  font-weight: bold;
+  text-align: start;
+}
+
+.add-tool-page form input,
+.add-tool-page form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-tool-page form button {
+  padding: 0.75rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-tool-page form button:hover {
+  background-color: #555;
+}
+
+/* Home page   */
+.home{
+  overflow: scroll;
+}
+
+
+/* Hero section */
+
+
+/* Style for the hero section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px 10px 20px;
+  color: rgb(5, 5, 5);
+  box-sizing: border-box;
+}
+
+/* Main heading */
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+  text-align: center;
+}
+
+/* Subheading */
+.hero h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #313131; /* Golden color for contrast */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Quote */
+.hero h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Adjust spacing for search bar */
+.hero .search-container {
+  margin-top: 30px;
+  width: 100%; /* Ensures alignment within the hero section */
+  max-width: 600px;
+}
+
+
+
+/* Search bar */
+
+/* Style for the search container */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Style for the search input */
+.search-container input {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  background-color: #d6d5d5;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Focus state for the input */
+.search-container input:focus {
+  border-color: #000000;
+}
+
+/* Style for the search button */
+.search-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #000000;
+  color: white;
+  border: 2px solid black;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover state for the button */
+.search-container button:hover {
+  background-color: #000000;
+}
+
+/* Style for the search icon */
+.search-container button svg {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.search-container-list {
+  display: block;
+  gap: var(--gap-size);
+  width: 100vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.search-container-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: var(--card-padding);
+  background-color: var(--secondary-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 90vw;
+  position: relative;
+}
+
+.search-container-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.search-container-card h2 {
+  margin: 0 0 0.5rem;
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.search-container-card a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/*  About  Us page*/
+
+.about-page {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+  overflow: visible;
+  padding: 45vh 4vw 5vh 4vw;
+
+}
+
+.project-scope {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  overflow: visible;
+  padding-top: 45vh;
+}
+
+.scope-text {
+  max-width: 60%;
+  overflow: visible;
+}
+
+.scope-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.scope-text p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.logo img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.developers {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.developers h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.member {
+  text-align: center;
+  margin: 1vh 1vw;
+}
+
+.member img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.community {
+  text-align: center;
+}
+
+.community h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #555;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #0073e6;
+}

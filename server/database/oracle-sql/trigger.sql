@@ -1,0 +1,13 @@
+CREATE OR REPLACE TRIGGER trg_update_tool
+BEFORE UPDATE ON ai_tools
+FOR EACH ROW
+BEGIN
+    :NEW.updated_at := CURRENT_TIMESTAMP;
+END;
+
+CREATE OR REPLACE TRIGGER trg_log_review
+AFTER INSERT ON reviews
+FOR EACH ROW
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('New review added for Tool ID: ' || :NEW.tool_id);
+END;
