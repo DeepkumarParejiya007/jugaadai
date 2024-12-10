@@ -1,7 +1,7 @@
 import React from 'react';
 import '../all.css';
 import Navbar from '../components/navbar';
-import deepImg from '../assets/deep_pic.JPG';
+import deepImg from '../assets/deep_pic.jpg';
 import aeshaImg from '../assets/aesha_pic.jpg';
 import joyImg from '../assets/joy_pic.jpg';
 import sakshamImg from '../assets/saksham_pic.jpg';
